@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+.clear::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+body{
+    width: 100%;
+    background: #f2f2f2;
+    color: #333;
+    font-size: 15px;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*--------------팝업창---------------*/
+
+.modal{
+    position: fixed;
+    background: rgba(0,0,0,0);
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal .modal_popup{
+    width: 420px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 40px;
+    background: #fff;
+}
+.modal .modal_popup h2{
+    height: 60px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    color: #ffc000;
+}
+.modal .modal_popup p{
+    margin-top: 20px;
+    line-height: 25px;
+    height: 300px;
+}
+.modal .modal_popup button{
+    float: right;
+    width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ffc000;
+    background: #ffc000;
+    color: #fff;
+}
+.modal .modal_popup button:hover{
+    background: #fff;
+    color: #ffc000;
+}
+
+/*--------------헤더---------------*/
+
+header{
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+header h2{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+header .nav_bg{
+    height: 120px;
+    background: #ff5050;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    display: none;
+}
+header nav ul.gnb{
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 800px;
+}
+header nav ul.gnb>li{
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ff5050;
+    border-right: 0;
+}
+header nav ul.gnb>li:last-child{
+    border-right: 1px solid #ff5050;
+}
+header nav ul.gnb>li:hover a{
+    background: #ff5050;
+    color: #fff;
+}
+header nav ul.gnb>li a{
+    display: block;
+    width: 100%;
+}
+header nav ul.gnb>li:last-child a{
+    border-right: 0;
+}
+header nav ul.gnb>li ul.sub{
+    color: #fff;
+    font-weight: normal;
+    display: none;
+}
+header nav ul.gnb>li ul.sub>li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+}
+header nav ul.gnb>li ul.sub>li:hover a{
+    background: #fff;
+    color: #ff5050;
+}
+header nav ul.gnb>li ul.sub>li a{
+    display: block;
+    width: 100%;
+}
+
+/*--------------슬라이더---------------*/
+
+.slide{
+    height: 300px;
+    background: #bbb;
+    position: relative;
+}
+.slide ul>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*--------------컨텐츠---------------*/
+
+.contents{
+    height: 200px;
+    background: #ccc;
+}
+.contents section{
+    float: left;
+}
+.contents .notice h2{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background: #ffc000;
+    color: #fff;
+    text-align: center;
+}
+.contents .notice ul{
+    width: 500px;
+    height: 170px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ffc000;
+    border-right: 0;
+    
+}
+.contents .notice ul>li{
+    height: 25px;
+    line-height: 25px;
+}
+.contents .notice ul>li a{
+    display: block;
+    width: 100%;
+}
+.contents .notice ul>li a:hover{
+    color: #ffc000;
+}
+.contents .notice ul>li .day{
+    float: right;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.contents .gal h2{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background: #5b9bd5;
+    color: #fff;
+    text-align: center;
+}
+.contents .gal ul{
+    width: 400px;
+    height: 170px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #5b9bd5;
+    border-right: 0;
+}
+.contents .gal ul>li{
+    float: left;
+    margin-right: 30px;
+}
+.contents .gal ul>li:last-child{
+    margin-right: 0;
+}
+.contents .gal ul>li a{
+    display: block;
+    width: 100%;
+}
+.contents .gal ul>li a:hover{
+    opacity: 0.8;
+}
+
+.contents .baro h2{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background: #ff5050;
+    color: #fff;
+    text-align: center;
+}
+.contents .baro ul{
+    width: 300px;
+    height: 170px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ff5050;
+}
+.contents .baro ul>li{
+    background: #ff5050;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contents .baro ul>li:last-child{
+    margin-bottom: 0;
+}
+.contents .baro ul>li a{
+    display: block;
+    width: 100%;
+}
+.contents .baro ul>li a:hover{
+    opacity: 0.5;
+}
+
+
+/*--------------푸터---------------*/
+
+footer{
+    height: 100px;
+    background: #ddd;
+}
+footer .copy_menu{
+    float: left;
+}
+
+footer .copy_menu .menu{
+    width: 980px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+footer .copy_menu .menu ul>li{
+    float: left;
+    margin-right: 20px;
+}
+footer .copy_menu .menu ul>li a:hover{
+    opacity: 0.5;
+}
+
+footer .copy_menu .copy{
+    width: 980px;
+    height: 50px;
+    padding: 0 10px;
+}
+footer .copy_menu .copy ul>li{
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+    color: #535353;
+}
+
+footer .family{
+    width: 200px;
+}
+footer .family h2{
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+footer .family ul{
+    padding-top: 5px;
+}
+footer .family ul>li{
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+}
+footer .family ul>li a:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+

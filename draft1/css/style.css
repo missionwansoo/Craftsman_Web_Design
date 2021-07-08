@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+.clear::after{
+    display: table;
+    content:"";
+    clear:both;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+body{
+    width: 100%;
+    color:#222328;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+}
+#warp{
+    width: 1200px;
+    margin:0 auto;
+}
+#modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+#modal button{
+    width: 50px;
+    height:50px;
+    font-size: 50px;
+}
+#modal .modal_inner{
+    width: 800px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*-----------header------------*/
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #bbb;
+    position: relative;
+    z-index: 10;
+}
+header h1{
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+}
+header nav{
+    float: right;
+    width: 800px;
+    margin-top: 30px;
+    position: absolute;
+    right: 10px;
+}
+header nav .gnb{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+header nav .gnb>li{
+    width: 25%;
+    float: left;
+    background: #fff;
+}
+header nav .gnb>li>a{
+    display: block;
+    width:100%;
+    height:100%;
+    font-size: 22px;
+    line-height: 45px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+header nav .gnb>li:hover>a{
+    background: #01a0ff;
+    color: fff;
+    transition: 0.5s;
+}
+header nav .gnb>li:last-child>a{
+    border-right: 0;
+}
+header nav .gnb>li>.sub{
+    width: 100%;
+    line-height: 40px;
+    display: none;
+}
+header nav .gnb>li>.sub>li{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+}
+header nav .gnb>li>.sub>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header nav .gnb>li>.sub>li>a:hover{
+    background: #01a0ff;
+    color: fff;
+    transition: 0.5s;
+}
+
+
+/*-----------section------------*/
+
+
+.slide{
+    width: 100%;
+    height:300px;
+    background: #aaa;
+    position: relative;
+    overflow: hidden;
+}
+.slide ul.slide_all{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;    
+}
+.slide ul.slide_all>li{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;    
+}
+.contents{
+    height: 200px;
+    background: #ccc;
+}
+.contents section{
+    width: 400px;
+    float: left;
+}
+.contents .note_gal{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+.contents .note_gal h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    line-height: 30px;
+    background: #ccc;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.contents .note_gal h3.l100{
+    left: 100px;
+}
+.contents .note_gal h3.on{
+    background: #01a0ff;
+    color: #fff;
+}
+.contents .note_gal ul{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: none;
+}
+.contents .note_gal ul.on{
+    display: block;
+}
+.contents .note_gal .notice{
+    width: 400px;
+    line-height: 25px;
+}
+.contents .note_gal .notice>li{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    height: 28px;
+    line-height: 28px;
+}
+.contents .note_gal .notice>li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .note_gal .notice>li a:hover{
+    color: #01a0ff;
+}
+.contents .note_gal .notice>li a .day{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 12px;
+}
+.contents .note_gal .gal{
+    width: 100%;
+}
+.contents .note_gal .gal>li{
+    float: left;
+    width: 120px;
+    height: 120px;
+    background-size: 120px;
+    margin-left: 12px;
+    margin-top: 12px;
+    text-indent: -9999px;
+}
+.contents .note_gal .gal>li:nth-child(1){
+    background-image: url(../img/gal1.jpg);
+}
+.contents .note_gal .gal>li:nth-child(2){
+    background-image: url(../img/gal2.jpg);
+}
+.contents .note_gal .gal>li:nth-child(3){
+    background-image: url(../img/gal3.jpg);
+}
+.contents .note_gal .gal>li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .banner_sub{
+    width: 400px;
+    height: 200px;
+}
+
+.contents .baro{
+    width: 400px;
+    height: 200px;
+}
+.contents .baro h2{
+    width: 100px;
+    line-height: 30px;
+    background: #01a0ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+.contents .baro h3{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #333;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: 1px solid #fff;
+}
+.contents .baro h3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .baro h3 a:hover{
+    opacity: 0.8;
+}
+
+
+
+/*-----------footer------------*/
+
+
+footer{
+    width: 100%;
+    height:100px;
+    background: #ddd;
+}
+footer p{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+footer .copy{
+    float: left;
+    width: 800px;
+    height: 100px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+footer .copy>li{
+    float: left;
+    margin-left: 20px;
+}
+footer .sns{
+    float: left;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+footer .sns>a{}
+
+
+
+
