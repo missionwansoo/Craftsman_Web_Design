@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+.clear::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #888888;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*-----------modal----------*/
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 99;
+    display: none;
+}
+.modal .modal_popup{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px;
+}
+.modal .modal_popup h2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.modal .modal_popup p{
+    width: 100%;
+    height: 220px;
+}
+.modal .modal_popup button{
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+
+/*-----------header----------*/
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #aaa;
+    position: relative;
+    z-index: 10;
+}
+header h2{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+
+/*-----------nav----------*/
+
+nav{
+    width: 800px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+nav ul.gnb{}
+nav ul.gnb>li{
+    width: 200px;
+    float: left;
+}
+nav ul.gnb>li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #caac7d;
+    border-right: 0;
+    background: #fff;
+}
+nav ul.gnb>li:last-child a{
+    border-right: 1px solid #caac7d;
+}
+nav ul.gnb>li:hover a{
+    background: #caac7d;
+    color: #fff;
+}
+nav ul.gnb>li ul.sub{
+    display: none;
+}
+nav ul.gnb>li ul.sub>li{}
+nav ul.gnb>li ul.sub>li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: 0;
+    background: #fff;
+    color: #888;
+}
+nav ul.gnb>li ul.sub>li a:hover{
+    background: #caac7d;
+    color: #fff;
+}
+
+
+/*-----------slide----------*/
+
+.slide{
+    width: 100%;
+    height: 300px;
+    background: #bbb;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+.slide ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*-----------contents----------*/
+
+.contents{
+    width: 100%;
+    height: 200px;
+}
+.contents section{
+    float: left;
+}
+.contents section h2{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #4a4948;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*-----------notice----------*/
+
+.notice{
+    width: 500px;
+    height: 200px;
+}
+.notice ul{
+    height: 160px;
+    box-sizing: border-box;
+    border: 1px solid #caac7d;
+    border-right: 0;
+    padding: 10px;
+}
+.notice ul li{
+    height: 24px;
+    line-height: 24px;
+}
+.notice ul li a{
+    display: block;
+    width: 100%;
+}
+.notice ul li a:hover{
+    color: #caac7d;
+}
+.notice ul li span.day{
+    float: right;
+    font-size: 12px;
+}
+
+
+/*-----------gal----------*/
+
+.gal{
+    width: 400px;
+    height: 200px;
+}
+.gal ul{
+    height: 160px;
+    box-sizing: border-box;
+    border: 1px solid #caac7d;
+    border-right: 0;
+    padding: 10px;
+}
+.gal ul li{
+    float: left;
+    margin-right: 38px;
+    margin-top: 20px;
+}
+.gal ul li:last-child{
+    margin-right: 0;
+}
+.gal ul li:hover{
+    opacity: 0.5;
+}
+
+
+/*-----------banner----------*/
+
+.banner{
+    width: 300px;
+    height: 200px;
+}
+
+
+/*-----------footer----------*/
+
+footer{
+    width: 100%;
+    height: 100px;
+}
+footer h2{
+    float: left;
+    width: 300px;
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+
+/*-----------copy----------*/
+
+.copy{
+    float: left;
+    width: 700px;
+    height: 100px;
+}
+.copy ul{
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+.copy ul li{
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+
+/*-----------sns----------*/
+
+.sns{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.sns h3{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sns ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+

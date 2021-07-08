@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+.clear::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+body{
+    width: 100%;
+    color:#333;
+    background: #fff;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal .modal_inner button{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.wrap{
+    width: 1000px;
+    height: 650px;
+}
+header{
+    width: 200px;
+    height: 650px;
+    background: #eee;
+    float: left;
+}
+header h1{
+    width: 200px;
+    padding: 10px 0;
+}
+header nav{
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+}
+header nav ul.gnb{
+    width:100%;
+}
+header nav ul.gnb>li{
+    width: 100%;
+}
+header nav ul.gnb>li>a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #222;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+header nav ul.gnb>li>a:hover{
+    background: #555;
+}
+header nav ul.gnb>li>ul.sub{
+    width: 100%;
+    display: none;
+}
+header nav ul.gnb>li>ul.sub>li{
+    width: 100%;
+}
+header nav ul.gnb>li>ul.sub>li>a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #888;
+    color: #fff;
+}
+header nav ul.gnb>li>ul.sub>li>a:hover{
+    background: #555;
+}
+
+.contents{
+    width: 800px;
+    height: 650px;
+    background: #bbb;
+    float: left;
+}
+.contents ul.slide{
+    width: 100%;
+    height: 350px;
+    background: #ccc;
+    position: relative
+}
+.contents ul.slide li{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contents ul.slide li:nth-child(1){
+    background-image: url(../img/banner1.jpg)
+}
+.contents ul.slide li:nth-child(2){
+    background-image: url(../img/banner2.jpg)
+}
+.contents ul.slide li:nth-child(3){
+    background-image: url(../img/banner3.jpg)
+}
+.contents ul.slide li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+}
+
+.contents .con{
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+}
+.contents .con h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-style: normal;
+    font-size: 18px;
+    border-radius: 10px 10px 0 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+.contents .con section{}
+.contents .con .con1{
+    float: left;
+    width: 450px;
+    height: 200px;
+    position: relative
+}
+.contents .con .con1 h2{
+    position: absolute;
+    left: 0;
+    top:0;
+    cursor: pointer;
+}
+.contents .con .con1 h2.on{
+    background: red;
+}
+.contents .con .con1 .h100{
+    left: 101px;
+}
+.contents .con .con1 ul{
+    display: none;
+}
+.contents .con .con1 ul.on{
+    display: block;
+}
+.contents .con .con1 ul.notice{
+    font-size: 13px;
+    padding: 30px 20px 0;
+    line-height: 28px;
+}
+.contents .con .con1 ul.notice li{
+    position: relative
+}
+.contents .con .con1 ul.notice li a{
+    display: block;
+    width: 100%;
+}
+.contents .con .con1 ul.notice li a:hover{
+    opacity: 0.5;
+}
+.contents .con .con1 ul.notice li .day{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contents .con .con1 ul.gal{
+    padding-top: 40px;
+}
+.contents .con .con1 ul.gal li{
+    float: left;
+    margin-left: 40px;
+}
+
+.contents .con .con2{
+    float: left;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.contents .con .con2 h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+}
+.contents .con .con3{
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.contents .con .con3 ul{}
+.contents .con .con3 ul>li{
+    width: 100%;
+    height: 80px;
+    background: red;
+    line-height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.contents footer{
+    width: 100%;
+    height: 100px;
+    background: #eee;
+}
+.contents footer .logo{
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+}
+.contents footer .f_r{
+    float: left;
+    width: 600px;
+}
+.contents footer .f_r ul.menu{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+.contents footer .f_r ul.menu li{
+    float: left;
+    margin-right: 20px;
+}
+.contents footer .f_r ul.menu li a{}
+
+.contents footer .copy{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

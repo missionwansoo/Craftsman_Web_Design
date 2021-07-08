@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+.clear::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #222328;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*--------------modal------------*/
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 99;
+    display: none;
+}
+.modal .modal_popup{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.modal .modal_popup h2{
+    height: 50px;
+    line-height: 50px;
+}
+.modal .modal_popup p{
+    height: 240px;
+}
+.modal .modal_popup button{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+}
+
+
+/*--------------header------------*/
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #aaa;
+    position: relative;
+}
+header h2{
+    padding: 25px 10px;
+}
+
+
+
+/*--------------nav------------*/
+
+nav{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    width: 800px;
+    height: 50px;
+    z-index: 10;
+}
+nav ul.gnb{
+    text-align: center;
+}
+nav ul.gnb>li{
+    float: left;
+    width: 200px;
+}
+nav ul.gnb>li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    border-right: 0;
+}
+nav ul.gnb>li:last-child a{
+    border-right: 1px solid #222328;
+}
+nav ul.gnb>li:hover a{
+    color: #fff;
+    background: #222328;
+}
+nav ul.gnb>li ul.sub{
+    display: none;
+}
+nav ul.gnb>li ul.sub>li{}
+nav ul.gnb>li ul.sub>li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    color: #fff;
+}
+nav ul.gnb>li ul.sub>li a:hover{
+    background: #fff;
+    color: #222328;
+}
+
+.nav_bg{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 1200px;
+    height: 160px;
+    background: #222328;
+    z-index: 9;
+    display: none;
+}
+
+/*--------------slide------------*/
+
+.slide{
+    width: 100%;
+    height: 300px;
+    background: #bbb;
+    position: relative;
+    overflow: hidden;
+}
+.slide ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/*--------------contents------------*/
+
+.contents{
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+}
+
+.notice_gal{
+    float: left;
+    width: 600px;
+    height: 200px;
+    position: relative;
+}
+
+
+/*--------------notice------------*/
+
+.notice{}
+.notice h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    border-bottom: 0;
+}
+.notice h2.on{
+    background: #222328;
+    color: #fff;
+}
+.notice ul{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    padding: 10px;
+    width: 600px;
+    height: 160px;
+    display: none;
+}
+.notice ul li{
+    width: 100%;
+    height: 23px;
+    line-height: 23px;
+}
+.notice ul li a{
+    display: block;
+    width: 100%;
+}
+.notice ul li a:hover{
+    color: #aaa;
+}
+.notice ul li span.day{
+    float: right;
+    font-size: 13px;
+}
+
+.on{
+    display: block !important;
+}
+
+
+/*--------------gal------------*/
+
+.gal{}
+.gal h2{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 0;
+}
+.gal h2.on{
+    background: #222328;
+    color: #fff;
+}
+.gal ul{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    width: 600px;
+    height: 160px;
+    padding: 30px 100px;
+}
+.gal ul li{
+    float: left;
+    margin-right: 45px;
+}
+.gal ul li:hover{
+    opacity: 0.5;
+}
+.gal ul li:last-child{
+    margin-right: 0;
+}
+
+
+/*--------------banner------------*/
+
+.banner{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+
+
+/*--------------baro------------*/
+
+.baro{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.baro h2{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    cursor: pointer;
+    border-bottom: 0;
+    background: #fff;
+}
+.baro ul{
+    width: 300px;
+    height: 160px;
+    box-sizing: border-box;
+    border: 1px solid #222328;
+    padding: 10px;
+}
+.baro ul li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #eee;
+}
+.baro ul li:last-child{
+    margin-bottom: 0;
+}
+.baro ul li a{
+    display: block;
+    width: 100%;
+}
+.baro ul li a:hover{
+    background: #222328;
+    color: #fff;
+}
+
+
+
+/*--------------footer------------*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
+
+.menu_copy{
+    float: left;
+}
+
+
+/*--------------menu------------*/
+
+.menu{
+    width: 1000px;
+    height: 50px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.menu ul li{
+    float: left;
+    margin-right: 20px;
+}
+.menu ul li:hover{
+    color: #888;
+}
+
+
+
+/*--------------copy------------*/
+
+.copy{
+    width: 1000px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.copy ul li{
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+    color: #888;
+}
+
+
+/*--------------fam------------*/
+
+.fam{
+    float: left;
+    width: 200px;
+}
+.fam h3{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.fam ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 3px;
+}
+.fam ul li:hover{
+    color: #888;
+}
+
+

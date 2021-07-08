@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+.clear::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+body{
+    width: 100%;
+    color: #222328;
+    background: #fff;
+}
+.wrap{
+    width:1000px;
+}
+/*--------------modal-----------*/
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 20;
+    display: none;
+}
+.modal .modal_popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.modal .modal_popup h2{
+    height:40px;
+    line-height: 40px;
+}
+.modal .modal_popup p{
+    width: 100%;
+    height: 240px;
+    line-height: 25px;
+    margin-top: 10px
+}
+.modal .modal_popup button{
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+
+
+/*--------------header-----------*/
+
+header{
+    width: 200px;
+    height: 650px;
+    background: #eee;
+    float: left;
+}
+header h2{
+    margin: 20px 0;
+}
+
+/*--------------nav-----------*/
+
+nav{
+    width: 180px;
+    margin: 0 auto;
+}
+nav ul.gnb{
+    text-align: center;
+}
+nav ul.gnb>li{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #ff8400;
+    border-bottom: 0;
+}
+nav ul.gnb>li:last-child{
+    border-bottom: 1px solid #ff8400;
+}
+nav ul.gnb>li:hover a{
+    background: #ff8400;
+    color: #fff;
+}
+nav ul.gnb>li a{
+    display: block;
+    width: 100%;
+    background: #fff;
+    color: #ff8400;
+}
+nav ul.gnb>li>ul.sub{
+    display: none;
+}
+nav ul.gnb>li>ul.sub>li{
+    height: 31px;
+    line-height: 30px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ff8400;
+    font-weight: normal;
+}
+nav ul.gnb>li>ul.sub>li:last-child{
+    border-bottom: 1px solid #fff;
+}
+nav ul.gnb>li>ul.sub>li a{
+    display: block;
+    width: 100%;
+    background: #fff;
+    color: #ff8400;
+}
+nav ul.gnb>li>ul.sub>li a:hover{
+    background: #ff8400;
+    color: #fff;
+}
+
+/*--------------contents-----------*/
+
+.contents{
+    width: 800px;
+    height: 650px;
+    float: left;
+}
+
+/*--------------slide-----------*/
+
+.slide{
+    width: 100%;
+    height: 350px;
+    background: #ccc;
+    overflow: hidden;
+}
+.slide ul{
+    position: relative;
+}
+.slide ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*--------------con-----------*/
+
+.con{
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+}
+.con section{
+    float: left;
+}
+.con section h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: #ff8400;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.con .notice{
+    width: 400px;
+}
+.con .notice ul{
+    height: 170px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ff8400;
+    border-right: 0;
+}
+.con .notice ul li{
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+}
+.con .notice ul li a{
+    display: block;
+    width: 100%;
+}
+.con .notice ul li a:hover{
+    color: #ff8400;
+}
+.con .notice ul li a .day{
+    float: right;
+    font-size: 10px;
+}
+
+
+.con .gal{
+    width: 300px;
+}
+.con .gal ul{
+    height: 170px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    border: 1px solid #ff8400;
+    border-right: 0;
+}
+.con .gal ul li{
+    float: left;
+    margin-left: 10px;
+}
+.con .gal ul li a:hover{
+    opacity: 0.5;
+}
+
+
+.con .baro{
+    width: 100px;
+}
+.con .baro ul{
+    height: 170px;
+    padding: 10px;;
+    box-sizing: border-box;
+    border: 1px solid #ff8400;
+    text-align: center;
+}
+.con .baro ul li{
+    height: 40px;
+    line-height: 40px;
+    background: #eee;
+    margin-top: 13px;
+}
+.con .baro ul li:first-child{
+    margin-top: 0;
+}
+.con .baro ul li a{
+    display: block;
+    width: 100%;
+}
+.con .baro ul li a:hover{
+    background: #ff8400;
+    color: #fff;
+}
+
+
+
+/*--------------footer-----------*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #eee;
+}
+
+footer .copy{
+    float: left;
+    width: 600px;
+    height: 100px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid #ff8400;
+}
+footer .copy ul{
+    width: 100%;
+    margin-top: 15px;
+}
+footer .copy ul li{
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+    color: #535353;
+}
+
+footer .sns_fam{
+    float: left;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    border-left: 1px solid #ff8400;
+}
+footer .sns_fam h2{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+}
+footer .sns_fam ul{
+    margin-top: 5px;
+}
+footer .sns_fam ul li{
+    float: left;
+    width: calc(100%/3);
+    font-size: 13px;
+    text-align: center;
+}
+
+footer .sns_fam .sns{
+    height: 50px;
+}
+
+footer .sns_fam .fam{
+    height: 50px;
+}
+footer .sns_fam .fam h2{
+    box-sizing: border-box;
+    border-top: 1px solid #ff8400;
+}
+
+
+
+
+
+
+
+
+
+
